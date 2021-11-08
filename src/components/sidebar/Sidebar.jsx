@@ -11,6 +11,7 @@ import {
   TrendingUp,
   WorkOutline,
 } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 import "./sidebar.css";
 
 const Sidebar = () => {
@@ -38,10 +39,13 @@ const Sidebar = () => {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quic Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem ">
+        <Link to="/users" style={{ textDecoration: 'none' }}>
+        <li className="sidebarListItem ">
               <PermIdentity className="sidebarIcon" />
               Users
             </li>
+        </Link>
+            
             <li className="sidebarListItem">
               <Storefront className="sidebarIcon" />
               Products
